@@ -7,28 +7,58 @@
     <title>Portfolio Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
 </head>
 
-<body>
-    <header class="site-header">
-        <h1 class="site-title">SiteTitle</h1>
-        <nav class="site-nav">
-            <ul>
-                <li><a href="recipes.html">recipes</a></li>
-                <li><a href="tools.html">tools</a></li>
-            </ul>
+<body class="home"> 
+    <header>
+        <nav  class="topnav" id="myTopnav">
+          <h1 class="siteTitle"><a href="index.html">Site Title</a></h1>
+          <div class="navIcon"><a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></div>
+          <ul class="navigation">
+            <li><a href="about.html">About</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+          </ul>
+          
         </nav>
-    </header>
+      </header>
     
     <main id="main">
-      <div class="featured">
-<h2 class="featuredrecipes">featuredrecipe</h2>
-      </div>
-      <div class="about">
-          <h2>about</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla fugit tempora voluptatibus? Commodi ullam, necessitatibus, iure quod placeat, adipisci laboriosam amet vitae iste nemo hic et illo. Porro, temporibus inventore.</p>
-      </div>
-
+      <article class="featured">
+          <div class="featuredimg">
+              <!-- <img src="images/chickenparm.jpg" alt="ChickenParm"> -->
+          </div>
+          <div class="featuredname">
+            <h2 class="featuredrecipes">Featured Recipe</h2>
+            <p class="featuredtext">This week's featured recipe is a simple Chicken Parmesan that serves as an easy meal that anyone can make. This can serve multiple people and also reheats nicely to make great leftovers.</p>
+          </div>
+      </article>
+      <article class="recipe">
+        <a  href= "recipe1.html" > <h2>Ribeye</h2> 
+        </a>
+          <div class="recipeimg">
+            <img src="images/ribeye.jpg" alt="Ribeye">
+        </div>
+        </article>
+      <article class="recipe">
+        <a  href= "recipe2.html" > <h2>Grilled Cheese</h2> 
+        </a>
+          <div class="recipeimg">
+            <img src="images/grilledcheese.jpg" alt="GrilledCheese">
+        </div>
+        </article>
+      <article class="recipe">
+         <h2>Scrambled Eggs</h2> 
+          <div class="recipeimg">
+            <img src="images/scrambledeggs.jpg" alt="ScrambledEggs">
+        </div>
+      </article>
+      <article class="recipe">
+          <h2>Guacamole</h2>
+          <div class="recipeimg">
+            <img src="images/guac.jpg" alt="Guacamole">
+          </div>
+      </article>
     </main>
     
     <footer class="site-footer">
